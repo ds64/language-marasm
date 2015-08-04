@@ -1,0 +1,43 @@
+'fileTypes': [
+  'marasm'
+]
+'name': 'MarASM'
+'patterns': [
+  {
+    'match': '(?i)(?x)(\\s*)\\b(?:nop|mov|add|sub|mul|div)\\b'
+    'name': 'keyword.basic.marasm'
+  }
+  {
+    'match': '(?i)(?x)(\\s*)\\b(?:push|pop|call|ret)\\b'
+    'name': 'keyword.stack.marasm'
+  }
+  {
+    'match': '(?i)(?x)(\\s*)\\b(?:jmp|jz|jnz|jmz|jlz)\\b'
+    'name': 'keyword.jump.marasm'
+  }
+  {
+    'match': '(?i)(?x)(\\s*)\\b(?:in|out)\\b'
+    'name': 'keyword.extdev.marasm'
+  }
+  {
+    'match': '(?i)(?x)(\\s*)\\b(?:setInt|int|rmInt)\\b'
+    'name': 'keyword.interrupt.marasm'
+  }
+  {
+    'match': '(?i)(?x)(\\s*)\\b(?:sleep|halt|trace|log|floor|ceil)\\b'
+    'name': 'keyword.other.marasm'
+  }
+  {
+    'match': '(?:--|\\/\\/|\\#|;).*$'
+    'name': 'comment.marasm'
+  }
+  {
+    'match': '\\b(?:0x)?[0-9a-fA-F]+\\b'
+    'name': 'constant.numeric.marasm'
+  }
+  {
+    'match': '\'.\''
+    'name': 'constant.string.marasm'
+  }
+]
+'scopeName': 'source.marasm'
