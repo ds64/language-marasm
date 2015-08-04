@@ -1,5 +1,5 @@
 # language-marasm package
 
-A short description of your package.
+Grammar support for MarASM language for Atom editor
 
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+[MarASM language repository](https://bitbucket.org/SR3u/mvm)
