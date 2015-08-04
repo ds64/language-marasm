@@ -4,40 +4,45 @@
 'name': 'MarASM'
 'patterns': [
   {
-    'match': '(?i)(?x)(\\s*)\\b(?:nop|mov|add|sub|mul|div)\\b'
-    'name': 'keyword.basic.marasm'
+    'match': '\\b(nop|mov|add|sub|mul|div|floor|ceil|push|pop|call|ret|jmp|jz|jnz|jmz|jlz|in|out|setint|int|rmint|sleep|halt)\\b'
+    'name': 'keyword.marasm'
   }
   {
-    'match': '(?i)(?x)(\\s*)\\b(?:push|pop|call|ret)\\b'
-    'name': 'keyword.stack.marasm'
+    'match': '\\b(trace|log)\\b'
+    'name': 'constant.numeric.line-number.find-in-files'
   }
   {
-    'match': '(?i)(?x)(\\s*)\\b(?:jmp|jz|jnz|jmz|jlz)\\b'
-    'name': 'keyword.jump.marasm'
+    'match': '\\b(var|gvar|delv|delg)\\b'
+    'name': 'variable.marasm'
   }
   {
-    'match': '(?i)(?x)(\\s*)\\b(?:in|out)\\b'
-    'name': 'keyword.extdev.marasm'
-  }
-  {
-    'match': '(?i)(?x)(\\s*)\\b(?:setInt|int|rmInt)\\b'
-    'name': 'keyword.interrupt.marasm'
-  }
-  {
-    'match': '(?i)(?x)(\\s*)\\b(?:sleep|halt|trace|log|floor|ceil)\\b'
-    'name': 'keyword.other.marasm'
-  }
-  {
-    'match': '(?:--|\\/\\/|\\#|;).*$'
+    'match': '\;.*$'
     'name': 'comment.marasm'
   }
   {
-    'match': '\\b(?:0x)?[0-9a-fA-F]+\\b'
+    'match': '\\b([0-9,\.]+)\\b'
     'name': 'constant.numeric.marasm'
   }
   {
     'match': '\'.\''
     'name': 'constant.string.marasm'
+  }
+  {
+    'begin': '\#json'
+    'end': '\#end'
+    'name': 'string.json.marasm'
+  }
+  {
+    'match': '\$[^\s]+'
+    'name': 'entity.function.marasm'
+  }
+  {
+    'match': '\@[^\s]+'
+    'name': 'storage.marasm'
+  }
+  {
+    'match': '((fun\:[^\s]+)|(fun\:\ +[^\s]+))'
+    'name': 'entity.function.marasm'
   }
 ]
 'scopeName': 'source.marasm'
