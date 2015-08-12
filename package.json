@@ -1,12 +1,11 @@
 {
   "name": "language-marasm",
-  "version": "0.0.2",
+  "version": "0.1.1",
   "description": "Adds support for MarASM language",
   "repository": "https://github.com/playinggod/language-marasm.git",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
