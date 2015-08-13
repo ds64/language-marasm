@@ -1,6 +1,6 @@
 {
   "name": "language-marasm",
-  "version": "0.1.1",
+  "version": "0.0.0",
   "description": "Adds support for MarASM language",
   "repository": "https://github.com/playinggod/language-marasm.git",
   "license": "MIT",
