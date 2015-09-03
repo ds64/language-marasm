@@ -4,7 +4,7 @@
 'name': 'MarASM'
 'patterns': [
   {
-    'match': '\\b(nop|mov|add|sub|mul|div|floor|ceil|push|pop|call|ret|jmp|jz|jnz|jmz|jlz|in|out|setint|int|rmint|sleep|halt)\\b'
+    'match': '\\b(nop|mov|add|sub|mul|div|floor|ceil|push|pop|call|ret|jmp|jz|jnz|jmz|jlz|in|out|setint|int|rmint|sleep|halt|load|store)\\b'
     'name': 'keyword.marasm'
   }
   {
